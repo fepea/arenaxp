@@ -4,88 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArenaXP - eSports</title>
-    <style>
-        /* Estilos Gerais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-
-        header {
-            background-color: #333;
-            padding: 1em;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2em;
-            color: #00e676;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 1em;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #00e676;
-            font-size: 1.1em;
-        }
-
-        /* Estilos para Seções */
-        section {
-            padding: 2em;
-            text-align: center;
-        }
-
-        #home, #inscricao, #eventos, #contato {
-            display: none;
-        }
-
-        /* Seção ativa */
-        .active {
-            display: block;
-        }
-
-        /* Estilos Específicos */
-        .button {
-            background-color: #00e676;
-            color: #1a1a1a;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            margin-top: 20px;
-        }
-
-        .button:hover {
-            background-color: #00c853;
-        }
-
-        footer {
-            background-color: #333;
-            color: #888;
-            padding: 1em;
-            text-align: center;
-            margin-top: 2em;
-        }
-    </style>
 </head>
 <body>
 
@@ -94,16 +12,16 @@
         <h1>ArenaXP - eSports</h1>
         <nav>
             <ul>
-                <li><a href="#" onclick="showSection('home')">Início</a></li>
-                <li><a href="#" onclick="showSection('inscricao')">Inscrição</a></li>
-                <li><a href="#" onclick="showSection('eventos')">Eventos</a></li>
-                <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Página Inicial -->
-    <section id="home" class="active">
+    <section id="home">
         <h2>Bem-vindo à ArenaXP!</h2>
         <p>ArenaXP é o seu portal definitivo para eventos de eSports. Fique por dentro dos campeonatos, inscreva-se e acompanhe as notícias do mundo dos jogos!</p>
     </section>
@@ -124,7 +42,7 @@
                 <option value="valorant">Valorant</option>
                 <option value="dota2">Dota 2</option>
             </select><br><br>
-            <button type="submit" class="button">Enviar Inscrição</button>
+            <button type="submit">Enviar Inscrição</button>
         </form>
     </section>
 
@@ -150,7 +68,7 @@
             <input type="email" id="emailContato" name="emailContato"><br><br>
             <label for="mensagem">Mensagem:</label><br>
             <textarea id="mensagem" name="mensagem" rows="4"></textarea><br><br>
-            <button type="submit" class="button">Enviar Mensagem</button>
+            <button type="submit">Enviar Mensagem</button>
         </form>
     </section>
 
@@ -158,17 +76,6 @@
     <footer>
         <p>&copy; 2023 ArenaXP - Todos os direitos reservados.</p>
     </footer>
-
-    <!-- JavaScript para Navegação -->
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
 
 </body>
 </html>
