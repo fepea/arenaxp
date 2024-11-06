@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArenaXP - Configurações</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ArenaXP</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <a href="configuracoes.html" id="userIcon">
+            <i class="fas fa-user"></i>
+        </a>
+    </header>
+
+    <main>
+        <h2>Configurações</h2>
+        <section>
+            <div>
+                <label for="profileImage">Imagem de Perfil:</label>
+                <input type="file" id="profileImage">
+            </div>
+            <div>
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" value="" placeholder="Novo nome de usuário">
+            </div>
+            <button id="saveBtn">Salvar Alterações</button>
+            <button id="logoutBtn">Sair da Conta</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ArenaXP. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/configuracoes.js"></script>
+</body>
+</html>
