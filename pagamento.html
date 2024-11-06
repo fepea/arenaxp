@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento - ArenaXP</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Pagamento - ArenaXP</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo ArenaXP">
+        </div>
+        <div class="user">
+            <img id="userIcon" src="images/user-icon.png" alt="Ícone do usuário" onclick="toggleUserMenu()">
+            <div id="userMenu" class="user-menu">
+                <a href="configuracoes.html">Configurações</a>
+                <a href="logout.html" id="logoutButton" onclick="logout()">Logout</a>
+            </div>
+        </div>
     </header>
 
-    <section id="paymentDetails">
-        <h2>Pagamento por Pix</h2>
-        <p>Para pagar o torneio, utilize a chave Pix abaixo:</p>
-        <pre>Chave Pix: 08646620174</pre>
-        <p>Após o pagamento, você será automaticamente inscrito no torneio.</p>
-    </section>
+    <main>
+        <h1>Detalhes do Pagamento</h1>
+        <p>Para se inscrever no torneio, faça o pagamento via PIX:</p>
+        <p><strong>Chave PIX: 08646620174</strong></p>
+        <p>Após o pagamento, sua inscrição será confirmada.</p>
+    </main>
 
     <footer>
-        <p>&copy; 2024 ArenaXP - Todos os direitos reservados.</p>
+        <p>&copy; 2024 ArenaXP. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
