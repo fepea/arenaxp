@@ -3,37 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArenaXP - Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Login - ArenaXP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>ArenaXP</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="login.html">Login</a>
-        </nav>
-        <a href="configuracoes.html" id="userIcon" style="display:none;">
-            <i class="fas fa-user"></i>
-        </a>
+        <h1>Bem-vindo à ArenaXP</h1>
     </header>
 
-    <main>
-        <h2>Login</h2>
-        <div id="loginForm">
-            <input type="text" id="usernameInput" placeholder="Digite seu nome de usuário">
-            <button id="loginBtn">Entrar</button>
-        </div>
-
-        <div id="welcomeMessage" style="display:none;">
-            <p>Você está logado como <span id="userNameDisplay"></span>!</p>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 ArenaXP. Todos os direitos reservados.</p>
-    </footer>
+    <div id="loginForm">
+        <form id="login">
+            <input type="text" id="username" placeholder="Nome de usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="message"></div>
+    </div>
 
     <script src="js/login.js"></script>
 </body>
