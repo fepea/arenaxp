@@ -1,21 +1,28 @@
-// Função para alternar a visibilidade do menu de configurações
-function toggleSettingsMenu() {
-    const menu = document.getElementById('settingsMenu');
-    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+// Função para mostrar/ocultar o menu de usuário
+function toggleUserMenu() {
+    const userMenu = document.getElementById("userMenu");
+    userMenu.style.display = (userMenu.style.display === "block") ? "none" : "block";
 }
 
-// Função de logout (remover usuário do armazenamento local e redirecionar para a página inicial)
+// Função de Logout
 function logout() {
+    // Remove os dados de login do localStorage
     localStorage.removeItem('userEmail');
-    localStorage.removeItem('userName');
-    window.location.href = 'index.html'; // Redireciona para a página inicial
+    localStorage.removeItem('username');
+
+    // Redireciona para a página de login
+    window.location.href = "login.html";
 }
 
-// Função para mostrar o ícone de usuário se o usuário estiver logado
+// Verificar se o usuário está logado
 document.addEventListener('DOMContentLoaded', function() {
-    const savedUserName = localStorage.getItem('userName');
-    if (savedUserName) {
-        document.getElementById('userIcon').style.display = 'block';  // Mostrar ícone
-        document.querySelector('header nav ul li a[href="login.html"]').style.display = 'none';  // Ocultar link de login
+    const username = localStorage.getItem('username');
+    
+    if (username) {
+        // Exibir o nome do usuário se estiver logado
+        document.getElementById('welcomeMessage').textContent = username;
+    } else {
+        // Se não estiver logado, redireciona para o login
+        window.location.href = "login.html";
     }
 });
