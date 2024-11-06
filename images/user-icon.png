@@ -1,0 +1,6 @@
+<div id="userIcon" style="display:none;">
+    <a href="configuracoes.html">
+        <!-- Caminho correto para a imagem -->
+        <img src="images/user-icon.png" alt="Ícone de Usuário" width="30" height="30">
+    </a>
+</div>
