@@ -8,8 +8,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Exibe o ícone de usuário
         document.getElementById('userIcon').style.display = 'block';
-
-        // Esconde o formulário de login
-        document.getElementById('loginForm').style.display = 'none';
     }
 });
