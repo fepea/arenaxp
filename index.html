@@ -3,31 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArenaXP - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>ArenaXP - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>ArenaXP</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="login.html">Login</a>
-        </nav>
-        <!-- Ícone de Usuário (inicialmente oculto) -->
-        <a href="configuracoes.html" id="userIcon" style="display:none;">
-            <i class="fas fa-user"></i>
-        </a>
+        <h1>Bem-vindo de volta à ArenaXP!</h1>
+        <div id="userIcon" style="display:none;">
+            <a href="configuracoes.html"><img src="user-icon.png" alt="Ícone de Usuário"></a>
+        </div>
     </header>
 
-    <main>
-        <h2>Bem-vindo à ArenaXP!</h2>
-        <p>O seu portal para os melhores eventos de eSports.</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 ArenaXP. Todos os direitos reservados.</p>
-    </footer>
+    <div id="message"></div> <!-- Aqui aparecerá a mensagem de boas-vindas -->
 
     <script src="js/index.js"></script>
 </body>
