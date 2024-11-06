@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArenaXP - Login</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Referência ao CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -14,25 +14,27 @@
             <a href="eventos.html">Eventos</a>
             <a href="login.html">Login</a>
         </nav>
+        <a href="configuracoes.html" id="userIcon" style="display:none;">
+            <i class="fas fa-user"></i>
+        </a>
     </header>
+
     <main>
-        <section>
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" required>
-                <label for="password">Senha:</label>
-                <input type="password" id="password" required>
-                <button type="submit">Entrar</button>
-            </form>
-            <p id="message"></p>
-        </section>
+        <h2>Login</h2>
+        <div id="loginForm">
+            <input type="text" id="usernameInput" placeholder="Digite seu nome de usuário">
+            <button id="loginBtn">Entrar</button>
+        </div>
+
+        <div id="welcomeMessage" style="display:none;">
+            <p>Você está logado como <span id="userNameDisplay"></span>!</p>
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2024 ArenaXP. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Referência ao JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
