@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArenaXP - eSports</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>ArenaXP - eSports</h1>
-        <div id="userStatus">
-            <button id="loginBtn" onclick="window.location.href='login.html'">Login</button>
-            <button id="logoutBtn" style="display:none;" onclick="logout()">Sair</button>
-            <div id="userIcon" style="display:none;">
-                <img src="images/user-icon.png" alt="Ícone de Usuário" onclick="toggleSettingsMenu()">
-                <div id="settingsMenu" style="display:none;">
-                    <button onclick="window.location.href='configuracoes.html'">Configurações</button>
-                    <button onclick="logout()">Sair</button>
-                </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Ícone do Usuário (visível após login) -->
+        <div id="userIcon" style="display:none;">
+            <img src="images/user-icon.png" alt="Ícone de Usuário" onclick="toggleSettingsMenu()">
+            <div id="settingsMenu" style="display:none;">
+                <button onclick="window.location.href='configuracoes.html'">Configurações</button>
+                <button onclick="logout()">Sair</button>
             </div>
         </div>
     </header>
 
-    <section id="about">
-        <h2>Quem somos?</h2>
-        <p>A ArenaXP é a plataforma definitiva para competições de eSports. Junte-se a nós em torneios emocionantes e mostre suas habilidades!</p>
-    </section>
+    <main>
+        <section>
+            <h1>Bem-vindo à ArenaXP</h1>
+            <p>Nosso objetivo é oferecer os melhores torneios de eSports para você!</p>
 
-    <section id="taxa">
-        <h2>Qual a taxa de inscrição para torneios?</h2>
-        <p>A taxa de inscrição varia conforme o torneio. Consulte a página de eventos para mais detalhes.</p>
-    </section>
+            <h2>Quem Somos?</h2>
+            <p>Somos uma plataforma que organiza torneios de eSports em várias modalidades...</p>
 
-    <section id="cta">
-        <button onclick="window.location.href='eventos.html'">Ver Torneios</button>
-    </section>
+            <h2>Qual a Taxa de Inscrição para Torneios?</h2>
+            <p>A taxa de inscrição varia conforme o torneio, mas sempre será acessível...</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 ArenaXP - Todos os direitos reservados.</p>
+        <p>&copy; 2024 ArenaXP - Todos os direitos reservados</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
